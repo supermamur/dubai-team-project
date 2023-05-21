@@ -9,10 +9,31 @@ $color-darker-grey: #929292;
 $color-black: #000000;
 
 /*------Fonts-----*/
+/*------Desktop Fonts-----*/
+$header-one: 70px;
+$header-two: 60px;
+$header-three: 48px;
+$header-four: 32px;
+$header-five: 25px;
+$content-text-one: 18px;
+$content-text-two: 16px;
+$content-text-three: 14px;
+$content-text-small: 12px;
+
+/*------Tablet Fonts-----*/
+$header-tab-one: 30px;
+$header-tab-two: 25px;
+$header-tab-three: 18px;
+$header-tab-four: 16px;
+
+/*------Mobile Fonts-----*/
+$header-mb-one: 24px;
+$header-mb-two: 18px;
 
 $font-weights: (
   'regular': 400,
   'medium': 500,
+  'semibold': 600,
   'bold': 700,
 );
 
