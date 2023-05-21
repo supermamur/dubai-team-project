@@ -80,10 +80,6 @@ p {
     }
 }*/
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
   color: #242424;
   background-color: rgba(255, 255, 255, 0.87);
   font-synthesis: none;
@@ -93,33 +89,43 @@ p {
   -webkit-text-size-adjust: 100%;
 }
 
+/*
+font-family: 'Lexend', sans-serif;
+ font-family: 'Roboto', sans-serif;
+ font-family: 'Work Sans', sans-serif;
+*/
 body {
-  font-family: "Work sans", sans-serif;
+  font-family: "Work Sans", Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
+  color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
   padding: 0 36px;
-}
-@media (min-width: 0) {
-  .container {
-    widht: 100%;
-    background-color: yellow;
-  }
+  width: 100%;
 }
 @media (min-width: 320px) {
   .container {
-    width: 320px;
+    width: 360px;
     background-color: green;
   }
 }
 @media (min-width: 780px) {
   .container {
-    width: 780px;
-    padding: 0 40px;
+    width: 768px;
+    padding: 0 38px;
     background-color: pink;
   }
 }
