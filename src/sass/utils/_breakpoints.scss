@@ -1,0 +1,78 @@
+/*------Screen sizes-----*/
+
+$breakpoints: (
+  'xs': 0,
+  'sm': 320px,
+  'md': 780px,
+  'lg': 1920px,
+);
+
+/*------Media queries-----*/
+
+@mixin xs {
+  @media (min-width: map-get($breakpoints, 'xs')) {
+    @content;
+  }
+}
+
+/*Example*/
+/*
+p {
+    @include xs {
+        color: red;
+    }
+}*/
+
+@mixin sm {
+  @media (min-width: map-get($breakpoints, 'sm')) {
+    @content;
+  }
+}
+/*Example*/
+/*
+p {
+    @include sm {
+        color: green;
+    }
+}*/
+
+@mixin md {
+  @media (min-width: map-get($breakpoints, 'md')) {
+    @content;
+  }
+}
+/*Example*/
+/*
+p {
+    @include md {
+        color: yellow;
+    }
+}*/
+
+@mixin lg {
+  @media (min-width: map-get($breakpoints, 'lg')) {
+    @content;
+  }
+}
+/*Example*/
+/*
+p {
+    @include md {
+        color: white;
+    }
+}*/
+
+/*Costomizible breakpoint*/
+
+@mixin breakpoints($bp: 0) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}
+/*Example*/
+/*
+p {
+    @include breakpoints(1400px) {
+        color: pink;
+    }
+}*/

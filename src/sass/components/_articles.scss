@@ -1,0 +1,20 @@
+.articles-container {
+  font-weight: weight(bold);
+
+  //  examples of mixins
+
+  @include flexCenter(row);
+
+  @include xs {
+    @include flexCenter(column);
+  }
+  @include lg {
+    @include flexCenter(column);
+  }
+
+  @include border();
+
+  @include breakpoints(1400px) {
+    color: blue;
+  }
+}

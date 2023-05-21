@@ -1,0 +1,24 @@
+/*------Colors-----*/
+
+$main-dark-color: #272727;
+$color-accent: #fcd54c;
+$color-white: #ffffff;
+$color-white-06: rgba(255, 255, 255, 0.6);
+$color-light-grey: #e8e8e8;
+$color-darker-grey: #929292;
+$color-black: #000000;
+
+/*------Fonts-----*/
+
+$font-weights: (
+  'regular': 400,
+  'medium': 500,
+  'bold': 700,
+);
+
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
+
+/*------Example-----*/
+/*font-weigth: weight(bold);*/

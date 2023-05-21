@@ -9,8 +9,9 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^4.0.0",
-    "glob": "^8.1.0"
+    "glob": "^8.1.0",
+    "sass": "^1.62.1",
+    "vite": "^4.0.0"
   },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
