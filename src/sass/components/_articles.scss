@@ -1,20 +1,41 @@
+.link {
+  color: red;
+  &:hover {
+    color: blue;
+  }
+}
+
 .articles-container {
   font-weight: weight(bold);
 
-  //  examples of mixins
-
+  font-weight: weight(medium); //  examples of mixins
   @include flexCenter(row);
 
   @include xs {
     @include flexCenter(column);
+    color: $main-dark-color;
+    font-size: 14px;
   }
   @include lg {
     @include flexCenter(column);
+    color: yellow;
+    font-size: $header-one;
   }
 
-  @include border();
+  @include border(red);
 
   @include breakpoints(1400px) {
     color: blue;
+  }
+}
+.class-1 {
+  @include lg {
+    color: yellow;
+    font-size: 18px;
+  }
+}
+.class-2 {
+  @include lg {
+    font-size: 18px;
   }
 }
