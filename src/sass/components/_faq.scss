@@ -1,12 +1,25 @@
-.faq-container {}
+.faq-container {
+  //? TEMP
+  background-color: $main-dark-color;
+}
 
 .faq-title {
+  font-family: "Gilroy", sans-serif;
   font-size: $header-mb-one;
   line-height: calc(30 / 24);
+
+  @include md {
+    font-size: $header-tab-one;
+    line-height: calc(37 / 30);
+  }
 }
 
 .faq-menu {
   margin-top: 20px;
+
+  @include md {
+    margin-top: 40px;
+  }
 }
 
 .faq-item {
@@ -26,9 +39,13 @@
 
   font-size: $content-text-small;
   line-height: calc(15 / 12);
+
+  @include md {
+    font-size: $content-text-two;
+    line-height: calc(21 / 16);
+  }
 }
 
 .faq-icon {
   stroke: $color-accent;
 }
-
