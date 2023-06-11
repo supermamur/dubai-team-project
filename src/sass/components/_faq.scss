@@ -1,0 +1,28 @@
+.faq-container {}
+
+.faq-title {
+  font-size: $header-mb-one;
+  line-height: calc(30 / 24);
+}
+
+.faq-menu {
+  margin-top: 20px;
+}
+
+.faq-item {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  border-top: 1px solid $color-darker-grey;
+  padding: 20px 0 10px 0;
+
+}
+
+.faq-text {
+  font-size: $content-text-small;
+  line-height: calc(15 / 12);
+}
+
+.faq-icon {
+  stroke: $color-accent;
+}
