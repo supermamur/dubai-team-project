@@ -12,13 +12,18 @@
 .faq-item {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 60px;
   border-top: 1px solid $color-darker-grey;
-  padding: 20px 0 10px 0;
 
+  &:last-child {
+    border-bottom: 1px solid $color-darker-grey;
+  }
 }
 
 .faq-text {
+  max-width: 95%;
+
   font-size: $content-text-small;
   line-height: calc(15 / 12);
 }
@@ -26,3 +31,4 @@
 .faq-icon {
   stroke: $color-accent;
 }
+
